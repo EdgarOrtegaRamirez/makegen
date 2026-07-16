@@ -110,9 +110,9 @@ func TestNodeMakefile(t *testing.T) {
 
 func TestMultiMakefile(t *testing.T) {
 	project := &detect.Project{
-		Type: detect.TypeMulti,
-		Name: "monorepo",
-		Dir:  ".",
+		Type:     detect.TypeMulti,
+		Name:     "monorepo",
+		Dir:      ".",
 		SubTypes: []detect.Type{detect.TypeGo, detect.TypeNode},
 	}
 

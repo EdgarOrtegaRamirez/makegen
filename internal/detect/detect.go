@@ -10,21 +10,21 @@ import (
 type Type string
 
 const (
-	TypeGo     Type = "go"
-	TypeRust   Type = "rust"
-	TypePython Type = "python"
-	TypeNode   Type = "node"
-	TypeMulti  Type = "multi"
+	TypeGo      Type = "go"
+	TypeRust    Type = "rust"
+	TypePython  Type = "python"
+	TypeNode    Type = "node"
+	TypeMulti   Type = "multi"
 	TypeUnknown Type = "unknown"
 )
 
 // Project describes a detected project.
 type Project struct {
-	Type Type
-	Name string
-	Dir  string
-	Files []string          // Files that triggered detection
-	SubTypes []Type         // For multi-type projects
+	Type     Type
+	Name     string
+	Dir      string
+	Files    []string          // Files that triggered detection
+	SubTypes []Type            // For multi-type projects
 	Metadata map[string]string // Extra info (Go version, Rust edition, etc.)
 }
 

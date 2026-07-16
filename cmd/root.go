@@ -10,10 +10,10 @@ import (
 )
 
 var (
-	outputFile   string
-	projectName  string
+	outputFile     string
+	projectName    string
 	forceOverwrite bool
-	listTypes    bool
+	listTypes      bool
 )
 
 var rootCmd = &cobra.Command{
